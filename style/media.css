@@ -1,0 +1,130 @@
+@media (max-width:1139.98px) {
+    .product .container {
+        gap: 30px;
+    }
+
+    .cards__content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card {
+        width: calc((100% - 30px) / 2);
+    }
+
+    .product__img-mid::before {
+        content: '';
+        display: none;
+    }
+
+    .product__img-mid::after {
+        content: '';
+        display: none;
+    }
+}
+
+@media (max-width:991.98px) {
+    .product .container {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .cards__content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card {
+        width: calc((100% - 30px) / 2);
+    }
+
+    .product__img-first {
+        order: -1;
+    }
+
+    .product .container .product__describe {
+        max-width: 70%;
+    }
+
+    .product__between .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product__between-describe {
+        text-align: center;
+    }
+
+    .product__between-describe {
+        max-width: 60%;
+    }
+}
+
+@media (max-width:767.98px) {
+    .intro__heading {
+        text-align: center;
+    }
+
+    .product .container .product__describe {
+        max-width: 100%;
+    }
+
+    .product__between-describe {
+        max-width: 80%;
+    }
+}
+
+@media (max-width:575.98px) {
+
+    body,
+    html {
+        font-size: 10px;
+    }
+
+    .nav {
+        padding: 80px 0;
+    }
+
+    .intro {
+        background: url(../img/320pxback.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .intro__heading {
+        text-align: center;
+    }
+
+    .nav .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo__links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__nav .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards__content {
+        justify-content: center;
+    }
+
+    .card {
+        width: 95%;
+    }
+
+    .product__between-describe {
+        text-align: justify;
+    }
+
+    .product .container .product__describe {
+        max-width: 100%;
+        text-align: justify;
+    }
+}
